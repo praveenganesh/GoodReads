@@ -1,10 +1,21 @@
+@import url(https://fonts.googleapis.com/css?family=Gloria + Hallelujah);
+
 .App {
   text-align: center;
 }
-
+* {
+  font-family: "Gloria Hallelujah", cursive;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+textarea:focus,
+input:focus {
+  outline: none;
+}
+*:focus {
+  outline: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -12,27 +23,132 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
 .App-header {
-  background-color: #282c34;
+  background-color: #080808;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 15px;
   color: white;
 }
+.heading {
+  font-weight: bold;
+  border-bottom: 1.5px solid black;
+  padding-bottom: 10px;
+  width: 100%;
+  text-transform: capitalize;
+}
+.bold {
+  font-weight: bold;
+  color: white;
+}
+.gray {
+  color: gray;
+}
+.rating {
+  margin-left: 10px;
+  font-weight: normal;
+}
+.rating:before {
+  content: "★";
+  margin-right: 6px;
+}
+.author {
+  color: gray;
+  margin-left: "10px";
+  font-weight: normal;
+}
+.justify-end {
+  display: flex;
+  justify-content: flex-end;
+}
+.book-wrap {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  padding: 10px;
+  cursor: pointer;
+  background: #1d1d1d;
+  margin: 10px 0;
+  border-radius: 6px;
+}
+button {
+  cursor: pointer;
+  height: 40px;
+  background: #1d1d1d;
+  color: white;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  margin: 0 10px;
+  font-weight: bold;
+  border: none;
+  text-transform: capitalize;
+  border: 1px solid white;
+}
+.flex-cover {
+  display: flex;
+  justify-content: space-between;
+}
+.align-center {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.book {
+  padding: 10px;
+  background: #f3f3f3;
+  border-radius: 3px;
+  cursor: pointer;
+}
+* {
+  user-select: none;
+}
+.title {
+  font-weight: bold;
+  text-shadow: 3px 1px 5px rgb(197, 212, 203);
+}
 
+input[type="text"] {
+  height: 40px;
+  width: 65%;
+  border-radius: 3px;
+  border: none;
+  margin-left: 20px;
+  border: 1px solid lightgray;
+  padding: 0 15px;
+  font-size: 18px;
+}
+
+.wrapper {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: left;
+  padding: 10px;
+}
+.info {
+  text-align: center;
+  color: lightgray;
+  font-weight: bold;
+}
 .App-link {
   color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pagination-wrap {
+  list-style-type: none;
+  display: flex;
+}
+.pagination-btn {
+  margin: 0 3px;
+  border: 1px solid white;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 12px;
+  border-radius: 3px;
+  padding: 3px 8px;
+}
+.current-page {
+  background: white;
+  color: black;
 }
