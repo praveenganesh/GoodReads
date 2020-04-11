@@ -11,9 +11,7 @@ export default function useGoodreadsBiz(props) {
   const [fetchigBook, setFetchingBook] = useState(false);
   const [totalPages, setTotalPages] = useState(0);
   useEffect(() => {
-    if (page > 1) {
-      search();
-    }
+    search();
   }, [page]);
   let config = {
     headers: {
