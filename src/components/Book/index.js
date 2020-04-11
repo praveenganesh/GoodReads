@@ -5,7 +5,7 @@ export default function Book(props) {
     <>
       <div className="book-wrap" data-testid={`book-${props.index}`}>
         <div className="flex-cover">
-          <div style={{ marginRight: "10px" }}>
+          <div className="thumbnail-container">
             <img src={book.best_book.small_image_url._text} />
           </div>
           <div className="align-center">

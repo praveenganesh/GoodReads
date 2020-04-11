@@ -27,7 +27,7 @@ function App(props) {
         <p className="title">Good reads</p>
         <div className="wrapper">
           <div>
-            <div style={{ display: "flex", justifyContent: "center" }}>
+            <div className="justify-center">
               <input
                 type="text"
                 placeholder="Search books ..."
